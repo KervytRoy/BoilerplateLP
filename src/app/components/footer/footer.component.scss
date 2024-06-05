@@ -1,0 +1,39 @@
+
+.location-title {
+    margin-bottom: 20px; /* Espacio entre el título y el mapa */
+    font-size: 30px; /* Tamaño del texto */
+    color: #ccc; /* Color del texto gris claro */
+    text-align: left; /* Asegura que el texto esté centrado */
+}
+
+/* Estilos para la sección de redes sociales */
+.social-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.social-title {
+    margin-bottom: 20px; /* Espacio entre el título y los botones */
+    font-size: 40px; /* Tamaño del texto */
+    color: #ccc; /* Color del texto gris claro */
+    text-align: center; /* Asegura que el texto esté centrado */
+    padding-bottom: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ... */
+}
+
+/* Estilos para los botones sociales */
+a.btn-social {
+    margin: 0 15px; /* Espacio entre los botones */
+    font-size: 60px; /* Tamaño del ícono */
+    color: #ccc; /* Color del ícono gris claro */
+    /* ... */
+}

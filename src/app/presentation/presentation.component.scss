@@ -1,0 +1,31 @@
+/* Establece el color de fondo de toda la pantalla */
+:host {
+    display: block;
+    height: 100%;
+    background-color: #e0e0e0; /* Gris claro */
+  }
+  
+  /* Estilos para el card con bordes pronunciados */
+  .example-card {
+    max-width: 400px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    border: 2px solid #424242; 
+  }
+  
+  .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  mat-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  

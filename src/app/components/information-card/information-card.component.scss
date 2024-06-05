@@ -1,0 +1,32 @@
+.custom-card {
+    position: relative; /* Necesario para posicionar el cuadrado */
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    border-radius: 0 16px 0 16px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del card */
+    margin-top: 12%;
+}
+
+.square {
+    position: absolute;
+    top: -35px; /* La mitad del tamaño del cuadrado para que sobresalga */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px; /* Tamaño del cuadrado */
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del cuadrado */
+    z-index: 1; /* Asegura que el cuadrado esté por encima del card */
+    display: flex; /* Para centrar el contenido */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+.square mat-icon {
+    font-size: 48px; /* Tamaño del ícono, el doble del tamaño original */
+    height: 90%;
+    width: 77%;
+    color: #8d4723; /* Color del ícono */
+    padding-top: 7%;
+}
