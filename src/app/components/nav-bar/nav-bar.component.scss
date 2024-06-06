@@ -1,0 +1,60 @@
+:root {
+    --gris-oscuro: #424242;
+    --gris-claro: #AEAEAE;
+    --dg-1: linear-gradient(to right, #FAFAFA, #BFBFBF);
+    --choco-oscuro: #8D4925;
+    --choco-claro: #C57D56;
+}
+
+header {
+    background: var(--dark);
+    height: 75vh;
+    min-height: 400px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0% 90%);
+}
+
+.div-nav {
+    height: 80px !important;
+    background: var(--dg-1) !important;
+    animation: none;
+}
+
+.div-nav .nav-wrapper ul {
+    margin: 0% 2% 0% 1%
+}
+
+.div-nav .nav-wrapper ul a {
+    color: var(--gris-oscuro) !important;
+    font-weight: bold;
+    margin: 0 5px 0 5px;
+}
+
+.div-nav .nav-wrapper>* {
+    height: 100% !important;
+}
+
+.div-nav .nav-wrapper>*>* {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+}
+
+.div-nav .nav-wrapper>*>*>* {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+}
+
+.div-nav .nav-wrapper .brand-logo {
+    padding: 15px 0px 15px 25px;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

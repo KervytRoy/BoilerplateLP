@@ -4,16 +4,16 @@
         <h2 class="subtitle">QUIENES SOMOS</h2>
     </div>
     <div class="grid-container">
-        <mat-grid-list cols="2" rowHeight="400px">
+        <mat-grid-list [cols]="colsFirstGrid" [rowHeight]="heightRowFirstGrid">
             <mat-grid-tile>
                 <div class="first-grid-item image-container">
-                    <img src="assets/img/5.png" alt="Descripción de la imagen">
+                    <img src="assets/img/5.png" alt="concreto">
                 </div>
             </mat-grid-tile>
             <mat-grid-tile>
                 <div class="first-grid-item content-container">
                     <div class="image-wrapper">
-                        <img src="assets/img/imagetipo.png" alt="Descripción de la segunda imagen">
+                        <img src="assets/img/imagetipo.png" alt="lrm">
                     </div>
                     <p class="description">
                         En Ingeniería y Concreto RLM, nos dedicamos a la asesoría técnica integral en la producción de
@@ -26,20 +26,24 @@
         </mat-grid-list>
     </div>
     <div class="grid-container-second">
-        <mat-grid-list cols="3" rowHeight="300px">
+        <mat-grid-list [cols]="colsSecondGrid" rowHeight="500px">
             <mat-grid-tile>
                 <div class="second-grid-item">
-                    <app-information-card fontIcon="visibility"></app-information-card>
+                    <app-information-card
+                        cardText="Convertirnos en el aliado estratégico de los productores de concreto, liderando la transformación de la industria hacia la excelencia operativa y la sostenibilidad. Nuestra visión es impulsar la innovación y la eficiencia en cada etapa del proceso, elevando los estándares de calidad y posicionando a nuestros clientes como referentes del sector."
+                        cardTitle="Visión" fontIcon="travel_explore"></app-information-card>
                 </div>
             </mat-grid-tile>
             <mat-grid-tile>
                 <div class="second-grid-item">
-                    <app-information-card fontIcon="eyeglasses"></app-information-card>
+                    <app-information-card cardText="En Ingeniería y Concreto RLM, nos dedicamos a la asesoría técnica integral en la producción de concreto premezclado, enfocándonos en la calidad y optimización de procesos para garantizar la excelencia y rentabilidad de nuestros clientes. Con una visión innovadora y un compromiso con los estándares más altos, ofrecemos soluciones concretas que construyen el futuro."
+                        cardTitle="Misión" fontIcon="settings_accessibility"></app-information-card>
                 </div>
             </mat-grid-tile>
             <mat-grid-tile>
                 <div class="second-grid-item">
-                    <app-information-card></app-information-card>
+                    <app-information-card cardText="Aspiramos a ser el aliado estratégico de productores de concreto, liderar la transformación hacia la excelencia y sostenibilidad, impulsar la innovación y eficiencia en el proceso, y elevar los estándares de calidad para que nuestros clientes sean líderes del sector."
+                        cardTitle="Objetivo" fontIcon="track_changes"></app-information-card>
                 </div>
             </mat-grid-tile>
         </mat-grid-list>

@@ -1,7 +1,9 @@
 <mat-card class="custom-card">
     <div class="square">
-        <mat-icon aria-hidden="false" aria-label="Eyeglasses icon" >eyeglasses</mat-icon>
+        <mat-icon aria-hidden="false" class="material-icons-sharp" aria-label="Icon" [fontIcon]="fontIcon"></mat-icon>
     </div>
     <mat-card-content>
+        <h2 class="card-title">{{ cardTitle }}</h2> <!-- Título vinculado -->
+        <p class="card-text">{{ cardText }}</p> <!-- Texto vinculado -->
     </mat-card-content>
 </mat-card>

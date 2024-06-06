@@ -1,0 +1,24 @@
+<header class="hero">
+    <section class="s-container-carousel">
+      <div class="s-carruseles" #asSlider id="slider">
+        <section class="s-slider-section" *ngFor="let img of images">
+          <div style="height: 100%;">
+            <img [src]="img">
+          </div>
+        </section>
+      </div>
+      <div class="s-btn-left"><i class='bx bx-chevron-left'></i></div>
+      <div class="s-btn-right"><i class='bx bx-chevron-right'></i></div>
+    </section>
+    <div class="contenedor-L">
+      <ul>
+        <li>Mejores Garantías</li>
+        <li>Asesorías</li>
+        <li>Técnicas de Concreto</li>
+        <li>Altos Niveles</li>
+        <li>Excelencia</li>
+        <li>Clientes Industriales</li>
+        <li>Prefabricadores</li>
+      </ul>
+    </div>
+  </header>

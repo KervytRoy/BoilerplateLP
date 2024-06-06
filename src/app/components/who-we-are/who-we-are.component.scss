@@ -1,20 +1,20 @@
 .container {
     width: 100%;
-    height: 1000px;
     background: linear-gradient(to bottom right, #F2F2F2, #E6E6E6);
     position: relative;
     overflow: hidden;
-}
 
-.container::before {
-    content: '';
-    width: 35%;
-    height: 80%;
-    background-color: #333;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-top-right-radius: 20px;
+    &::before {
+        content: '';
+        width: 35%;
+        height: 80%;
+        background-color: #3f3f3f;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top-right-radius: 20px;
+        transition: height 0.3s ease;
+    }
 }
 
 .text-container {
@@ -55,6 +55,7 @@
 .image-container img {
     max-width: 80%;
     object-fit: cover;
+    margin-left: -2%;
 }
 
 .content-container {
@@ -93,4 +94,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+    .container::before {
+        height: calc(80% + 15%);
+    }
+    .text-container {
+        top: 1%;
+    }
+    .content-container {
+        margin: 5%;
+    }
+    .description {
+        color: #000000;
+    }
+    
 }

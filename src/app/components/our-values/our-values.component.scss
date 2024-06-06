@@ -1,0 +1,148 @@
+.container {
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(to bottom right, #F2F2F2, #9c9c9c);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before {
+    content: '';
+    width: 35%;
+    height: 80%;
+    background-color: #3f3f3f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 20px;
+}
+
+mat-grid-list {
+    width: 100%;
+    height: 100%;
+}
+
+mat-grid-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    width: 100%;
+}
+
+.title {
+    font-family: "Lexend", sans-serif;
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-weight: 500;
+}
+
+.image-container img {
+    max-width: 83%;
+    object-fit: cover;
+    margin-left: -2%;
+}
+
+.inner-grid {
+    width: 100%;
+    height: 100%;
+}
+
+.inner-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 9%;
+}
+
+.example-card {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.example-card mat-icon {
+    font-size: 48px;
+    color: #c47b54;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.card-info {
+    text-align: center;
+}
+
+.card-info .title {
+    font-family: "Lexend", sans-serif;
+    font-size: 2.1em;
+    color: #8d4723;
+    margin-top: 7%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.card-info .subtitle {
+    font-family: "Lexend", sans-serif;
+    font-size: 0.9em;
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        position: relative;
+        padding-top: 7%;
+        left: 0;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2.1em;
+        color: #000000;
+    }
+
+    .image-container {
+        margin: 20px 0;
+    }
+
+    .image-container img {
+        position: relative;
+    }
+
+    .card-info .subtitle {
+        color: #000000;
+    }
+
+    .example-card {
+        width: 107px;
+        height: 110px;
+    }
+
+}

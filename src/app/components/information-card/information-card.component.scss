@@ -1,32 +1,89 @@
 .custom-card {
-    position: relative; /* Necesario para posicionar el cuadrado */
-    width: 200px;
-    height: 250px;
+    position: relative;
+    /* Necesario para posicionar el cuadrado */
+    width: 300px;
+    height: 350px;
     background-color: white;
-    border-radius: 0 16px 0 16px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del card */
+    border-radius: 0 16px 0 16px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra más oscura y más extensa */
     margin-top: 12%;
+
+    /* Borde diagonal */
+    border: solid;
+    border-width: 0 0px 1px 0px;
+    /* Borde inferior y derecho */
+    border-color: #c47b54;
+}
+
+.custom-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-width: 0 0px 2px 1px;
+    /* Borde inferior y derecho */
+    border-color: #c47b54;
+    pointer-events: none;
+    /* Para no interferir con la interacción */
+    box-sizing: border-box;
+    /* Para asegurar que el borde no afecte el tamaño del card */
 }
 
 .square {
     position: absolute;
-    top: -35px; /* La mitad del tamaño del cuadrado para que sobresalga */
+    top: -35px;
+    /* La mitad del tamaño del cuadrado para que sobresalga */
     left: 50%;
     transform: translateX(-50%);
-    width: 60px; /* Tamaño del cuadrado */
+    width: 60px;
+    /* Tamaño del cuadrado */
     height: 60px;
     background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del cuadrado */
-    z-index: 1; /* Asegura que el cuadrado esté por encima del card */
-    display: flex; /* Para centrar el contenido */
-    align-items: center; /* Centrado vertical */
-    justify-content: center; /* Centrado horizontal */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Sombra más oscura y más extensa */
+    z-index: 1;
+    /* Asegura que el cuadrado esté por encima del card */
+    display: flex;
+    /* Para centrar el contenido */
+    align-items: center;
+    /* Centrado vertical */
+    justify-content: center;
+    /* Centrado horizontal */
 }
 
 .square mat-icon {
-    font-size: 48px; /* Tamaño del ícono, el doble del tamaño original */
+    font-size: 48px;
+    /* Tamaño del ícono, el doble del tamaño original */
     height: 90%;
     width: 77%;
-    color: #8d4723; /* Color del ícono */
+    color: #8d4723;
+    /* Color del ícono */
     padding-top: 7%;
+}
+
+/* Agrega estilos para el título y el párrafo */
+.card-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 2.1em;
+    color: #3c3a3a;
+    /* Color del título */
+    margin-top: 22%;
+    margin-bottom: 10%;
+    /* Espaciado alrededor del título */
+    text-align: center;
+}
+
+.card-text {
+    font-family: "Lexend", sans-serif;
+    font-size: 1em;
+    color: #3c3a3a;
+    /* Color del texto */
+    margin-bottom: 16px;
+    /* Espaciado debajo del párrafo */
+    text-align: center;
 }

@@ -1,9 +1,24 @@
+.location {
+    display: flex;
+    margin-left: 20%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 
 .location-title {
-    margin-bottom: 20px; /* Espacio entre el título y el mapa */
-    font-size: 30px; /* Tamaño del texto */
-    color: #ccc; /* Color del texto gris claro */
-    text-align: left; /* Asegura que el texto esté centrado */
+    margin-bottom: 20px;
+    /* Espacio entre el título y el mapa */
+    font-size: 30px;
+    /* Tamaño del texto */
+    color: #ccc;
+    /* Color del texto gris claro */
+    text-align: left;
+    /* Asegura que el texto esté centrado */
+    font-family: "Lexend", sans-serif;
+    color: rgb(255, 255, 255);
+
 }
 
 /* Estilos para la sección de redes sociales */
@@ -16,11 +31,17 @@
 }
 
 .social-title {
-    margin-bottom: 20px; /* Espacio entre el título y los botones */
-    font-size: 40px; /* Tamaño del texto */
-    color: #ccc; /* Color del texto gris claro */
-    text-align: center; /* Asegura que el texto esté centrado */
+    margin-bottom: 20px;
+    /* Espacio entre el título y los botones */
+    font-size: 40px;
+    /* Tamaño del texto */
+    color: #ccc;
+    /* Color del texto gris claro */
+    text-align: center;
+    /* Asegura que el texto esté centrado */
     padding-bottom: 20px;
+    font-family: "Lexend", sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 .social-buttons {
@@ -32,8 +53,36 @@
 
 /* Estilos para los botones sociales */
 a.btn-social {
-    margin: 0 15px; /* Espacio entre los botones */
-    font-size: 60px; /* Tamaño del ícono */
-    color: #ccc; /* Color del ícono gris claro */
+    margin: 0 15px;
+    /* Espacio entre los botones */
+    font-size: 60px;
+    /* Tamaño del ícono */
+    color: #ccc;
+    /* Color del ícono gris claro */
     /* ... */
+}
+
+.mat-grid-list {
+    position: relative;
+}
+
+.mat-grid-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Ajusta la opacidad según sea necesario */
+    pointer-events: none;
+    /* Esto permite que los clics pasen a través del overlay */
+}
+
+@media (max-width: 600px) {
+    .location {
+        margin-left: 0%;
+        align-items: center;
+    }
+
 }

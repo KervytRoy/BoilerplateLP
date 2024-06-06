@@ -1,0 +1,125 @@
+<div class="container">
+  <div style="width: 100%; height: 100%;" *ngIf="!isMobileView">
+    <mat-grid-list [cols]="colsFirstGrid" [rowHeight]="heightRowFirstGrid">
+      <mat-grid-tile>
+        <div class="text-container">
+          <h1 class="title">NUESTROS VALORES</h1>
+        </div>
+        <div class="first-grid-item image-container">
+          <img src="assets/img/6.png" alt="concreto">
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-grid-list [cols]="colsFirstGrid" rowHeight="266px" class="inner-grid">
+          <mat-grid-tile>
+            <div class="inner-item">
+              <mat-card class="example-card">
+                <mat-card-content>
+                  <mat-icon>star</mat-icon>
+                </mat-card-content>
+              </mat-card>
+              <div class="card-info">
+                <p class="title">Excelencia</p>
+                <p class="subtitle">Nos comprometemos a mantener los más altos estándares de calidad en todo lo que
+                  hacemos, desde la asesoría hasta la implementación de las soluciones.</p>
+              </div>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div class="inner-item">
+              <mat-card class="example-card">
+                <mat-card-content>
+                  <mat-icon>groups</mat-icon>
+                </mat-card-content>
+              </mat-card>
+              <div class="card-info">
+                <p class="title">Colaboración</p>
+                <p class="subtitle">Valoramos el trabajo en equipo y la colaboración con nuestros clientes para alcanzar
+                  resultados óptimos y satisfacer sus necesidades de manera integral.</p>
+              </div>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div class="inner-item">
+              <mat-card class="example-card">
+                <mat-card-content>
+                  <mat-icon>rocket_launch</mat-icon>
+                </mat-card-content>
+              </mat-card>
+              <div class="card-info">
+                <p class="title">Innovación</p>
+                <p class="subtitle">Buscamos constantemente nuevas formas de mejorar los procesos y ofrecer soluciones
+                  avanzadas que impulsen el progreso de la industria del concreto.</p>
+              </div>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div class="inner-item">
+              <mat-card class="example-card">
+                <mat-card-content>
+                  <mat-icon>handshake</mat-icon>
+                </mat-card-content>
+              </mat-card>
+              <div class="card-info">
+                <p class="title">Compromiso</p>
+                <p class="subtitle">Estamos comprometidos con el éxito y la satisfacción de nuestros clientes, brindando
+                  un servicio excepcional y cumpliendo con nuestras promesas de venta.</p>
+              </div>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div class="inner-item">
+              <mat-card class="example-card">
+                <mat-card-content>
+                  <mat-icon>diversity_3</mat-icon>
+                </mat-card-content>
+              </mat-card>
+              <div class="card-info">
+                <p class="title">Sostenibilidad</p>
+                <p class="subtitle">Nos preocupamos por el medio ambiente y nos esforzamos en promover prácticas
+                  sostenibles en la producción de concreto, minimizando así el impacto en el entorno.</p>
+              </div>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div class="inner-item">
+              <mat-card class="example-card">
+                <mat-card-content>
+                  <mat-icon>favorite</mat-icon>
+                </mat-card-content>
+              </mat-card>
+              <div class="card-info">
+                <p class="title">Integridad</p>
+                <p class="subtitle">Actuamos siempre con honestidad, transparencia y ética en todas nuestras relaciones
+                  comerciales y decisiones empresariales.</p>
+              </div>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-grid-tile>
+    </mat-grid-list>
+    </div>
+  <div style="width: 100%; height: 100%;" *ngIf="isMobileView">
+    <div class="text-container">
+      <h1 class="title">NUESTROS VALORES</h1>
+    </div>
+    <div class="first-grid-item image-container">
+      <img src="assets/img/6.png" alt="concreto">
+    </div>
+    <mat-grid-list [cols]="colsSecondGrid" rowHeight="300px" class="inner-grid">
+      <mat-grid-tile *ngFor="let value of values">
+        <div class="inner-item">
+          <mat-card class="example-card">
+            <mat-card-content>
+              <mat-icon>{{value.icon}}</mat-icon>
+            </mat-card-content>
+          </mat-card>
+          <div class="card-info">
+            <p class="title">{{value.title}}</p>
+            <p class="subtitle">{{value.subtitle}}</p>
+          </div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
