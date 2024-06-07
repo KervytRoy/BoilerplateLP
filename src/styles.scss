@@ -1,8 +1,16 @@
+:root {
+  --gris-oscuro: #424242;
+  --gris-claro: #AEAEAE;
+  --dg-1: linear-gradient(to right, #FAFAFA, #BFBFBF);
+  --choco-oscuro: #8D4925;
+  --choco-claro: #C57D56;
+}
+
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Lexend', sans-serif !important;}
-h1, h2, h3, h4, h5, h6 {font-family: 'Lexend', sans-serif !important;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Lexend', sans-serif !important; line-height: 0.98 !important;}
 /* Escala tipográfica */
 h1 {
   font-size: 2.986rem !important;
@@ -18,10 +26,16 @@ h2 {
 
 h3 {
   font-size: 2.074rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.00536em !important;
+  margin: 0 0 6px !important;
 }
 
 h4 {
   font-size: 1.728rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.00536em !important;
+  margin: 0 0 6px !important;
 }
 
 h5 {
