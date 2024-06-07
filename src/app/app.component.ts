@@ -6,6 +6,7 @@ import { WhoWeAreComponent } from './components/who-we-are/who-we-are.component'
 import { OurValuesComponent } from './components/our-values/our-values.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FlayersComponent } from './components/flayers/flayers.component';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { HeaderComponent } from './components/header/header.component';
     WhoWeAreComponent,
     OurValuesComponent,
     NavBarComponent,
-    HeaderComponent],
+    HeaderComponent,
+    FlayersComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

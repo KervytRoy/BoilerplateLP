@@ -99,7 +99,10 @@
 @media (max-width: 600px) {
     .container::before {
         height: calc(80% + 15%);
+        background-color: #949494;
+
     }
+
     .text-container {
         top: 1%;
     }
