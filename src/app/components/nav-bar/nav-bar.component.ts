@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',

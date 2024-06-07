@@ -133,9 +133,10 @@ header {
 
     list-style: none;
     margin: 0px;
-    animation: cambiar 18s infinite;
+    animation: _ngcontent-ng-c2395225986_cambiar 18s infinite;
     text-align: center;
-    width: 98%;
+    width: 100%;
+    padding-left: 0px;
 }
 
 .contenedor-L ul li {
@@ -321,7 +322,7 @@ header {
 @media screen and (max-width: 768px) {}
 
 /* Estilos para móvil */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 610px) {
     .contenedor-L {
         width: 340px !important;
         font-size: 18px;
@@ -338,6 +339,5 @@ header {
         position: absolute;
         right: 0;
     }
-
 
 }
