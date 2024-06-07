@@ -1,5 +1,12 @@
 /* HEADER SLIDER */
 
+header {
+    background: var(--dark);
+    height: 75vh;
+    min-height: 400px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0% 90%);
+}
+
 /*slider Top */
 
 .s-container-carousel {
@@ -311,9 +318,7 @@
 
 
 /* Estilos para tablet */
-@media screen and (max-width: 768px) {
-    
-}
+@media screen and (max-width: 768px) {}
 
 /* Estilos para móvil */
 @media screen and (max-width: 480px) {
