@@ -34,13 +34,13 @@ mat-grid-tile {
 .text-container {
     position: absolute;
     top: 12%;
-    left: 10%;
+    left: 3%;
     width: 100%;
 }
 
 .title {
     font-family: "Lexend", sans-serif;
-    font-size: 2.5em;
+    font-size: 2.5em !important;
     color: rgb(255, 255, 255);
     margin: 0;
     font-weight: 500;
@@ -94,7 +94,7 @@ mat-grid-tile {
 
 .card-info .title {
     font-family: "Lexend", sans-serif;
-    font-size: 2.1em;
+    font-size: 2.1em !important;
     color: #8d4723;
     margin-top: 7%;
     margin-bottom: 4%;

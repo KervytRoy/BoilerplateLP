@@ -79,26 +79,15 @@ header {
     }
 }
 
-@media screen and (max-width: 700px) {
-    .container {
-        /* Ajustes específicos para tablet */
-    }
-}
-
 /* Estilos para móvil */
 @media screen and (max-width: 610px) {
     #toggle-menu {
-        display: block;
-        border: none; 
-        border-radius: 10px; 
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-        padding: 10px 20px; 
         background-color: #424242; 
-        color: #fff; 
-        cursor: pointer; 
-        transition: background-color 0.3s ease, transform 0.2s ease; 
-    }
-
+        color: #fff;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        display: block;
+      }
+      
     .div-nav ul#nav-mobile {
         display: flex;
         flex-direction: column;

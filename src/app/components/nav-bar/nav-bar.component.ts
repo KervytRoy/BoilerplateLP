@@ -1,30 +1,35 @@
-import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { ViewportScroller } from '@angular/common'; // Importa ViewportScroller
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [],
+  imports: [MatIconModule, MatButtonModule],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+  styleUrls: ['./nav-bar.component.scss'] // Corregido a styleUrls
 })
 export class NavBarComponent implements AfterViewInit {
   @ViewChild('asDivNav', { static: true }) asDivNav!: ElementRef;
 
+  constructor(private renderer: Renderer2, private viewportScroller: ViewportScroller) {} // Inyecta ViewportScroller
+
   ngAfterViewInit() {
     const divNav = this.asDivNav.nativeElement;
-    const toggleButton = divNav.querySelector('#toggle-menu') as HTMLElement; // Cambio a querySelector
-    const navMobile = divNav.querySelector('#nav-mobile') as HTMLElement; // Cambio a querySelector
+    const toggleButton = divNav.querySelector('#toggle-menu') as HTMLElement;
+    const navMobile = divNav.querySelector('#nav-mobile') as HTMLElement;
+    const links = divNav.querySelectorAll('a[href]') as NodeListOf<HTMLAnchorElement>;
 
     window.addEventListener('scroll', () => {
       const scrollTop = window.scrollY;
 
-      // Ajustar la posición según la visibilidad
       if (scrollTop > 100) {
         divNav.style.position = 'fixed';
         divNav.style.zIndex = '999';
         divNav.style.animation = 'slide-down 0.8s ease forwards';
       } else {
-        divNav.style.position = 'block'; // Otra posición deseada
+        divNav.style.position = 'block';
         divNav.style.animation = 'none';
       }
     });
@@ -32,6 +37,25 @@ export class NavBarComponent implements AfterViewInit {
     toggleButton.addEventListener('click', () => {
       navMobile.classList.toggle('active');
     });
-  }
 
+    this.renderer.listen('document', 'click', (event: Event) => {
+      const target = event.target as HTMLElement;
+
+      if (!divNav.contains(target) && navMobile.classList.contains('active')) {
+        navMobile.classList.remove('active');
+      }
+    });
+
+    // Añadir listeners a los enlaces del menú
+    links.forEach((link: HTMLAnchorElement) => {
+      link.addEventListener('click', (event: Event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href')!.substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          this.viewportScroller.scrollToPosition([0, targetElement.offsetTop]);
+        }
+      });
+    });
+  }
 }

@@ -1,40 +1,18 @@
-<nav  #asDivNav class="div-nav">
+<!-- nav-bar.component.html -->
+<nav #asDivNav class="div-nav">
   <div class="nav-wrapp">
     <a href="#" class="brand-logo left">
       <img src="../../../assets/imagetipo.png" alt="Logo">
     </a>
     <ul id="nav-mobile" class="right">
-      <li><a href="sass.html">Inicio</a></li>
-      <li><a href="badges.html">Servicio</a></li>
-      <li><a href="collapsible.html">Sobre Nosotros</a></li>
-      <li><a href="collapsible.html">Contacto</a></li>
+      <li><a href="#" appScrollToTop>Inicio</a></li>
+      <li><a href="#who-we-are">Sobre Nosotros</a></li>
+      <li><a href="#services">Servicio</a></li>
+      <li><a href="#our-values">Nuestros Valores</a></li>
+      <li><a href="#">Contacto</a></li>
     </ul>
   </div>
-  <button id="toggle-menu">Abrir Menú</button>
+  <button mat-fab id="toggle-menu">
+    <mat-icon>menu</mat-icon>
+  </button>
 </nav>
-<!-- <script>
-  /* Efecto absolute del header  */
-  // Detectar el evento de scroll
-  window.addEventListener('scroll', function () {
-    const nav = document.querySelector('.div-nav');
-    const scrollTop = window.scrollY;
-
-    // Ajustar la posición según la visibilidad
-    if (scrollTop > 100) {
-      nav.style.position = 'fixed';
-      nav.style.zIndex = '999';
-      nav.style.animation = 'slide-down 0.8s ease forwards';
-    } else {
-      nav.style.position = 'block'; // Otra posición deseada
-      nav.style.animation = 'none';
-    }
-  });
-
-
-  const toggleButton = document.getElementById('toggle-menu');
-  const navMobile = document.getElementById('nav-mobile');
-
-  toggleButton.addEventListener('click', function () {
-    navMobile.classList.toggle('active');
-  });
-</script> -->

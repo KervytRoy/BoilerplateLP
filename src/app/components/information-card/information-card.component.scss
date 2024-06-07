@@ -2,7 +2,7 @@
     position: relative;
     /* Necesario para posicionar el cuadrado */
     width: 300px;
-    height: 350px;
+    height: 380px;
     background-color: white;
     border-radius: 0 16px 0 16px;
     /* Esquinas redondeadas */
@@ -72,10 +72,10 @@
     font-size: 2.1em !important;
     color: #3c3a3a;
     /* Color del título */
-    margin-top: 22%;
-    margin-bottom: 10%;
+    margin-top: 22% !important;
+    margin-bottom: 10% !important;
     /* Espaciado alrededor del título */
-    text-align: center;
+    text-align: center !important;
 }
 
 .card-text {

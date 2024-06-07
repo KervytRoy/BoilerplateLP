@@ -20,7 +20,7 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 export class FooterComponent implements OnInit {
   colsFirstGrid = 2;
   colsSecondGrid = 3;
-  heightRowFirstGrid = "300px";
+  heightRowFirstGrid = "270px";
   isMobileView = false;
 
   constructor(private breakpointObserver: BreakpointObserver) {}
