@@ -4,7 +4,7 @@
     --dg-1: linear-gradient(to right, #FAFAFA, #BFBFBF);
     --choco-oscuro: #8D4925;
     --choco-claro: #C57D56;
-  }
+}
 
 header {
     background: var(--dark);
@@ -15,23 +15,27 @@ header {
 
 .div-nav {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos en los extremos */
-    align-items: center; /* Centra verticalmente */
-    background-color: linear-gradient(to right, #FAFAFA, #BFBFBF) !important;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #FAFAFA, #BFBFBF) !important;
     padding: 10px;
     height: 80px;
+    width: 100%;
 }
 
 .brand-logo {
     display: flex;
-    align-items: center; /* Centra verticalmente */
+    align-items: center;
+    /* Centra verticalmente */
     text-decoration: none;
     color: #fff;
 }
 
 .brand-logo img {
-    max-width: 12rem; /* Ajusta el tamaño del logo según tus necesidades */
-    margin-right: 10px; /* Espacio entre el logo y el texto */
+    max-width: 12rem;
+    /* Ajusta el tamaño del logo según tus necesidades */
+    margin-right: 10px;
+    /* Espacio entre el logo y el texto */
 }
 
 #nav-mobile {
@@ -42,7 +46,8 @@ header {
 }
 
 #nav-mobile li {
-    margin-right: 20px; /* Espacio entre los elementos de la lista */
+    margin-right: 20px;
+    /* Espacio entre los elementos de la lista */
 }
 
 #nav-mobile li a {
@@ -59,6 +64,10 @@ header {
     align-items: center;
 }
 
+#toggle-menu {
+    display: none;
+}
+
 
 @keyframes slide-down {
     0% {
@@ -68,4 +77,49 @@ header {
     100% {
         transform: translateY(0);
     }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        /* Ajustes específicos para tablet */
+    }
+}
+
+/* Estilos para móvil */
+@media screen and (max-width: 610px) {
+    #toggle-menu {
+        display: block;
+        border: none; 
+        border-radius: 10px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        padding: 10px 20px; 
+        background-color: #424242; 
+        color: #fff; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease, transform 0.2s ease; 
+    }
+
+    .div-nav ul#nav-mobile {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        background: rgb(255, 255, 255);
+        z-index: 999;
+        padding: 4%;
+        right: -40%;
+        transition: right 0.6s ease-in-out; /* Agrega una transición suave */
+    }
+    
+    .div-nav ul#nav-mobile li {
+        margin: 10% 0% 10% 0%;
+    }
+    
+    .div-nav ul#nav-mobile.active {
+        display: flex; /* Muestra el menú cuando está activo */
+        right: 0;
+    }
+  
+    
+
 }
