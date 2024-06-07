@@ -1,5 +1,5 @@
-.container {
-    width: 100%;
+.containerGeneral {
+    width: 100% !important;
     background: linear-gradient(to bottom right, #F2F2F2, #E6E6E6);
     position: relative;
     overflow: hidden;
@@ -94,7 +94,7 @@
 }
 
 @media (max-width: 600px) {
-    .container::before {
+    .containerGeneral::before {
         height: calc(80% + 15%);
         background-color: #949494;
 
