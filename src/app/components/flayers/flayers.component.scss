@@ -1,11 +1,15 @@
+:root{
+  --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+}
+
 .calidad {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url(../../../assets/1.png);
+  position: relative; /* Añade posición relativa al contenedor */
+  background: linear-gradient(135deg, #ffffff7e 0%, #b9b9b998 100%), url(../../../assets/1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
 .calidad h2 {
