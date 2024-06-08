@@ -1,0 +1,132 @@
+:root{
+  --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+}
+
+.calidad {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative; /* Añade posición relativa al contenedor */
+  background: linear-gradient(135deg, #ffffff7e 0%, #b9b9b998 100%), url(../../../assets/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.calidad h2 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3.5;
+}
+
+.calidad .slider {
+  position: relative;
+  max-width: 100%;
+  height: 500px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.calidad .slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+
+.calidad .slide>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.calidad button {
+  background: none;
+  border: none;
+}
+
+.calidad button .fas {
+  color: rgba(255, 255, 255, .5);
+}
+
+.calidad .btn-slide {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  height: 5.5rem;
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+.calidad .btn-slide:focus {
+  background: #2727273f;
+}
+
+.calidad .prev {
+  left: 3rem;
+  transform: translate(-50%, -50%);
+}
+
+.calidad .next {
+  right: 3rem;
+  transform: translate(50%, -50%);
+}
+
+.calidad .dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.calidad .dot {
+  width: 25px;
+  height: 5px;
+  margin: 15px 5px;
+  border-radius: .5rem;
+  background: rgba(39, 39, 39, .5);
+  cursor: pointer;
+}
+
+.calidad .dot.active {
+  background: #272727;
+}
+
+@media screen and (max-width:900px) {
+  .calidad .slider {
+    height: 350px !important;
+  }
+}
+
+
+@media screen and (max-width: 610px) {
+  .contenedor-L {
+    width: 340px !important;
+    font-size: 18px;
+    justify-content: center;
+  }
+
+  .contenedor-L:before {
+    content: '';
+    left: 0;
+  }
+
+  .contenedor-L:after {
+    content: '';
+    position: absolute;
+    right: 0;
+  }
+
+  .calidad .slider {
+    margin: 0px auto;
+  }
+
+  .calidad .slide>img {
+    height: 60%;
+  }
+
+
+}
