@@ -46,16 +46,20 @@ export class NavBarComponent implements AfterViewInit {
       }
     });
 
-    // Añadir listeners a los enlaces del menú
     links.forEach((link: HTMLAnchorElement) => {
       link.addEventListener('click', (event: Event) => {
         event.preventDefault();
         const targetId = link.getAttribute('href')!.substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          this.viewportScroller.scrollToPosition([0, targetElement.offsetTop]);
+        if (targetId === '') { // Verifica si el enlace es para el inicio
+          this.viewportScroller.scrollToPosition([0, 0]); // Desplázate al principio de la página
+        } else {
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            this.viewportScroller.scrollToPosition([0, targetElement.offsetTop]);
+          }
         }
       });
     });
+        
   }
 }
