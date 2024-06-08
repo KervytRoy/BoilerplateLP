@@ -1,19 +1,19 @@
 import { Component, AfterViewInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { ViewportScroller } from '@angular/common'; // Importa ViewportScroller
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
   imports: [MatIconModule, MatButtonModule],
   templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss'] // Corregido a styleUrls
+  styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements AfterViewInit {
   @ViewChild('asDivNav', { static: true }) asDivNav!: ElementRef;
 
-  constructor(private renderer: Renderer2, private viewportScroller: ViewportScroller) {} // Inyecta ViewportScroller
+  constructor(private renderer: Renderer2, private viewportScroller: ViewportScroller) {}
 
   ngAfterViewInit() {
     const divNav = this.asDivNav.nativeElement;
@@ -48,18 +48,20 @@ export class NavBarComponent implements AfterViewInit {
 
     links.forEach((link: HTMLAnchorElement) => {
       link.addEventListener('click', (event: Event) => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href')!.substring(1);
-        if (targetId === '') { // Verifica si el enlace es para el inicio
-          this.viewportScroller.scrollToPosition([0, 0]); // Desplázate al principio de la página
-        } else {
-          const targetElement = document.getElementById(targetId);
-          if (targetElement) {
-            this.viewportScroller.scrollToPosition([0, targetElement.offsetTop]);
+        const href = link.getAttribute('href')!;
+        if (href.startsWith('#')) {
+          event.preventDefault();
+          const targetId = href.substring(1);
+          if (targetId === '') {
+            this.viewportScroller.scrollToPosition([0, 0]);
+          } else {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              this.viewportScroller.scrollToPosition([0, targetElement.offsetTop]);
+            }
           }
         }
       });
     });
-        
   }
 }
