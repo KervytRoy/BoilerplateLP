@@ -54,3 +54,19 @@ p {
 small {
   font-size: 0.833rem !important;
 }
+
+
+@media screen and (max-width: 610px) {
+  h1 {
+    font-size: 2.586rem !important;
+  }
+  h4 {
+  font-size: 1.628rem !important;
+  }
+  h3 {
+    font-size: 1.74rem !important;
+  }
+  h4 {
+  font-size: 1.628rem !important;
+  }
+}

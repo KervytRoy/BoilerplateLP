@@ -103,6 +103,12 @@
 
 
 @media screen and (max-width: 610px) {
+  h3 {
+    font-size: 1.74rem !important;
+  }
+  h4 {
+  font-size: 1.628rem !important;
+  }
   .contenedor-L {
     width: 340px !important;
     font-size: 18px;
@@ -122,11 +128,10 @@
 
   .calidad .slider {
     margin: 0px auto;
+    height: 200px !important;
   }
 
   .calidad .slide>img {
     height: 60%;
   }
-
-
 }
