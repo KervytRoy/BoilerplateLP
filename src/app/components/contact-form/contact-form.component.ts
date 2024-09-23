@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
+  onSubmit() {
 
+    alert('Formulario enviado. Serás redirigido en breve.');
+    
+  }
 }

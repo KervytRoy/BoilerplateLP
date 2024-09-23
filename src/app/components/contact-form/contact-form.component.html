@@ -1,19 +1,21 @@
- <section class="contact">
-            <div class="contact_us container">
-                <h1 class="titles">Envianos un correo</h1>
-                <form>
-                    <div class="input-wrap">
-                        <input type="text" placeholder="Your Name*">
-                        <input type="email" placeholder="Your Email*">
-                    </div>
-                    <div type="text" class="input-wrap-2">
-                        <input type="text" placeholder="Your Subject...">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
-                    </div>
-                    <div>
-                        <button class="send_message"> Send Message </button>
-                    </div>
-                </form>
-
+<section class="contact my-5">
+    <div class="contact_us container">
+        <h1 class="titles">Contáctenos</h1>
+        <form class="my-3" action="https://formsubmit.co/ronaldwilf@gmail.com" method="POST">
+            <div class="input-wrap">
+                <input type="text" name="name" placeholder="Tu nombre completo">
+                <input type="email" name="email" placeholder="tucorreo@gmail.com">
             </div>
-        </section>
+            <div type="text" class="input-wrap-2">
+                <textarea name="" id="" cols="30" rows="10" name="message"
+                    placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+            <div>
+                <button id="submitButton" name="submit" type="submit" class="send_message btn btn-primary">Enviar correo</button>
+            </div>
+            <input type="hidden" name="_next" value="http://localhost:4200">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+
+    </div>
+</section>
