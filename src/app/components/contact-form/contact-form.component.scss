@@ -3,8 +3,15 @@
 
 
 .contact_us {
+  text-align: left;
+  align-items: center;
+}
+
+.contact_us .titles {
   text-align: center;
 }
+
+
 
 .contact_us .container_contact_icons {
   display: flex;
