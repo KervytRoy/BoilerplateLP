@@ -9,6 +9,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FlayersComponent } from './components/flayers/flayers.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
+import { CommentAndVideoComponent } from './components/comment-and-video/comment-and-video.component';
+
 
 @Component({
   selector: 'app-root',
@@ -22,6 +24,7 @@ import { OurServicesComponent } from './components/our-services/our-services.com
     HeaderComponent,
     FlayersComponent,
     ContactFormComponent,
+    CommentAndVideoComponent,
     OurServicesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
