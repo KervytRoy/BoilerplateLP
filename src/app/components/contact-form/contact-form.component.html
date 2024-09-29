@@ -1,118 +1,114 @@
-<section class="contact my-5">
+<section class="contact my-5 pb-5">
     <div class="contact_us container">
         <h1 class="titles">Contáctenos</h1>
         <form class="my-3" action="https://formsubmit.co/ronaldwilf@gmail.com" method="POST">
-            <div class="input-wrap">
-                <input type="text" name="name" placeholder="Tu nombre completo">
-                <input type="email" name="email" placeholder="tucorreo@gmail.com">
-            </div>
-            <div type="text" class="input-wrap-2">
-                <textarea name="" id="" cols="30" rows="10" name="message"
-                    placeholder="Escribe tu mensaje..."></textarea>
-            </div>
-
-
             <div class="row">
                 <div class="col-6">
+                    <div class="input-wrap" style="display: flex; align-items: center; justify-content: space-around;">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-wrap" style="display: flex; align-items: center; justify-content: space-around;">
+                        <label for="empresa">Nombre de la empresa:</label>
+                        <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="input-wrap" style="display: flex; align-items: center; justify-content: space-around;">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="tucorreo@gmail.com">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-wrap" style="display: flex; align-items: center; justify-content: space-around;">
+                        <label for="telefono">Número de teléfono:</label>
+                        <input type="number" id="telefono" name="telefono" placeholder="Número de teléfono">
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-6">
                     <div class="my-4">
-                        <label for="" class="preguntas">1. ¿Cuál es la necesidad o el dolor más importante que enfrenta actualmente en su producción
+                        <label for="" class="preguntas">1. ¿Cuál es la necesidad o el dolor más importante que enfrenta
+                            actualmente en su producción
                             de concreto?</label>
-                        <select class="form-select my-3" aria-label="Default select example">
+                        <select class="form-select my-3" aria-label="Default select example" name="Necesidad">
                             <option selected>Selecciona una opción</option>
-                            <option value="1">Variabilidad en la calidad del concreto</option>
-                            <option value="2">Altos costos operativos</option>
-                            <option value="3">Desperdicio de materiales</option>
-                            <option value="4">Falta de personal capacitado</option>
-                            <option value="5">Optimización de mezclas</option>
-                            <option value="6">Optimización de mezclas</option>
-                            <option value="7">Otro</option>
+                            <option value="Variabilidad en la calidad del concreto" >Variabilidad en la calidad del concreto</option>
+                            <option value="Altos costos operativos">Altos costos operativos</option>
+                            <option value="Desperdicio de materiales">Desperdicio de materiales</option>
+                            <option value="Falta de personal capacitado">Falta de personal capacitado</option>
+                            <option value="Optimización de mezclas">Optimización de mezclas</option>
+                            <option value="Optimización de mezclas">Optimización de mezclas</option>
+                            <option value="Otro">Otro</option>
                         </select>
                         <div type="text" class="input-wrap-2 my-3">
-                            <textarea name="" id="" cols="30" rows="10" name="necesidad_especifica"
-                                placeholder="Especifica tu necesidad..."></textarea>
+                            <input name="" id="" cols="30" rows="10" name="Necesidad_especifica"
+                                placeholder="Especifica tu necesidad...">
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="my-4">
-                        <label for="" class="preguntas">2. ¿Está interesado en recibir asesoría técnica o capacitación para mejorar sus procesos de
+                        <label for="" class="preguntas">2. ¿Está interesado en recibir asesoría técnica o capacitación
+                            para mejorar sus procesos de
                             producción de concreto?</label>
-                        <select class="form-select my-3" aria-label="Default select example">
-                            <option selected>Selecciona una opción</option>
-                            <option value="1">Asesoría técnica</option>
-                            <option value="2">Capacitación</option>
-                            <option value="3">Asesoría técnica y Capacitación</option>
+                        <select class="form-select my-3" aria-label="Default select example" name="Asesoria_o_Capacitacion">
+                            <option value="Ninguna">Selecciona una opción</option>
+                            <option value="Asesoría técnica">Asesoría técnica</option>
+                            <option value="Capacitación">Capacitación</option>
+                            <option value="Asesoría técnica y Capacitación">Asesoría técnica y Capacitación</option>
                         </select>
                     </div>
                 </div>
             </div>
-           
-             <div class="row">
+
+            <div class="row my-3">
                 <div class="col-6">
-                    <div >
-                        <label for="" class="preguntas">3. ¿Qué le gustaría recibir en nuestras asesorías técnicas?</label>
+                    <div>
+                        <label for="" class="preguntas">3. ¿Qué le gustaría recibir en nuestras asesorías
+                            técnicas?</label>
                         <label for="" class="preguntas">(Seleccione las áreas de interés)</label>
-                        <div class="my-3">
-                            <div class="form-check form-switch my-3">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                    checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Optimización de procesos</label>
-                            </div>
-        
-                            <div class="form-check form-switch my-3">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                    checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Control de calidad y
-                                    verificación</label>
-                            </div>
-                            <div class="form-check form-switch my-3">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                    checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Innovación en tecnologías de
-                                    producción</label>
-                            </div>
-                            <div class="form-check form-switch my-3">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                    checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Reducción de costos y mejora
-                                    operativa</label>
-                            </div>
-                            <div class="form-check form-switch my-3">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                    checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Cumplimiento de normativas y
-                                    estándares</label>
-                            </div>
-                            <div class="form-check form-switch my-3"><input class="form-check-input" type="checkbox" role="switch"
-                                    id="flexSwitchCheckChecked" checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Otro(especifique)</label>
-                            </div>
-                            <div type="text" class="input-wrap-2">
-                                <textarea name="" id="" cols="30" rows="10" name="contenido_acesoria"
-                                    placeholder="Especifica tu necesidad..."></textarea>
-                            </div>
+                        <select class="form-select my-3" aria-label="Default select example" name="Intereses">
+                            <option value="Ninguna" selected>Selecciona una opción</option>
+                            <option value="Optimización de procesos" >Optimización de procesos</option>
+                            <option value="Control de calidad y verificación">Control de calidad y verificación</option>
+                            <option value="Innovación en tecnologías de producción">Innovación en tecnologías de producción</option>
+                            <option value="Reducción de costos y mejora operativa">Reducción de costos y mejora operativa</option>
+                            <option value="Cumplimiento de normativas y estándares">Cumplimiento de normativas y estándares</option>
+                        </select>
+                        <div type="text" class="input-wrap-2 my-3">
+                            <input name="" id="" cols="30" rows="10" name="Intereses_especificos"
+                                placeholder="Que te gustaria recibir en la auditoría..">
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div>
-                        <label for="" class="preguntas">4. ¿Cuál es su expectativa principal al trabajar con RLM Ingeniería y Concreto?</label>
+                        <label for="" class="preguntas">4. ¿Cuál es su expectativa principal al trabajar con RLM
+                            Ingeniería y Concreto?</label>
                         <label for="" class="preguntas">(Describa brevemente lo que le gustaría lograr)</label>
                         <div type="text" class="input-wrap-2 my-3">
-                            <textarea name="" id="" cols="30" rows="10" name="necesidad_especifica"
-                                placeholder="Especifica tu necesidad..."></textarea>
+                            <input name="" id="" cols="30" rows="10" name="Espectativas"
+                                placeholder="Que te gustaria recibir en la auditoría..">
                         </div>
                     </div>
                 </div>
-             </div>
-           
-           
+            </div>
+
+
             <div class="d-flex justify-content-center">
-                <button id="submitButton" name="submit" type="submit" class="send_message btn btn-primary">Enviar
+                <button id="submitButton" type="submit" class="send_message btn btn-primary">Enviar
                     correo</button>
             </div>
+            
             <input type="hidden" name="_next" value="http://localhost:4200">
             <input type="hidden" name="_captcha" value="false">
+           
         </form>
     </div>
 </section>

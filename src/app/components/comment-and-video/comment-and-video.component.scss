@@ -1,0 +1,46 @@
+
+.fondo-video{
+ background: var(--dg-2);
+}
+
+.testimony_item {
+    width: 95%;
+    margin: 0 auto;
+    background: var(--dg-1);
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: var(--gris-oscuro);
+    border: solid 1px;
+}
+
+.testimony_person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimony_img {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid #fff;
+    margin-right: 30px;
+}
+
+.testimony_name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimony_verification {
+    color: var(--choco-oscuro);
+    font-weight: 700;
+}
+
+.testimony_review {
+    font-weight: 300;
+}
