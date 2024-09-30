@@ -3,13 +3,13 @@
         <h1 class="titles">Contáctenos</h1>
         <form class="my-3" action="https://formsubmit.co/ronaldwilf@gmail.com" method="POST">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="input-wrap" style="display: flex; align-items: center; justify-content: space-around;">
                         <label for="nombre">Nombre completo:</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="input-wrap" style="display: flex; align-items: center; justify-content: space-around;">
                         <label for="empresa">Nombre de la empresa:</label>
                         <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
@@ -17,13 +17,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="input-wrap" style="display: flex; align-items: center; justify-content: space-around;">
                         <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" placeholder="tucorreo@gmail.com">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="input-wrap" style="display: flex; align-items: center; justify-content: space-around;">
                         <label for="telefono">Número de teléfono:</label>
                         <input type="number" id="telefono" name="telefono" placeholder="Número de teléfono">
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="row my-3">
-                <div class="col-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="my-4">
                         <label for="" class="preguntas">1. ¿Cuál es la necesidad o el dolor más importante que enfrenta
                             actualmente en su producción
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="my-4">
                         <label for="" class="preguntas">2. ¿Está interesado en recibir asesoría técnica o capacitación
                             para mejorar sus procesos de
@@ -68,7 +68,7 @@
             </div>
 
             <div class="row my-3">
-                <div class="col-6">
+                <div class="col-md-6 col-xs-12">
                     <div>
                         <label for="" class="preguntas">3. ¿Qué le gustaría recibir en nuestras asesorías
                             técnicas?</label>
@@ -83,18 +83,18 @@
                         </select>
                         <div type="text" class="input-wrap-2 my-3">
                             <input name="" id="" cols="30" rows="10" name="Intereses_especificos"
-                                placeholder="Que te gustaria recibir en la auditoría..">
+                                placeholder="Que mas te gustaria recibir en la auditoría?...">
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-xs-12">
                     <div>
-                        <label for="" class="preguntas">4. ¿Cuál es su expectativa principal al trabajar con RLM
+                        <label for="" class="preguntas">4. ¿Cuál es su espectativa principal al trabajar con RLM
                             Ingeniería y Concreto?</label>
                         <label for="" class="preguntas">(Describa brevemente lo que le gustaría lograr)</label>
                         <div type="text" class="input-wrap-2 my-3">
                             <input name="" id="" cols="30" rows="10" name="Espectativas"
-                                placeholder="Que te gustaria recibir en la auditoría..">
+                                placeholder="Cual es tu espectativa?">
                         </div>
                     </div>
                 </div>
@@ -112,3 +112,9 @@
         </form>
     </div>
 </section>
+
+<script>
+    function disableButton() {
+        document.getElementById("submitButton").disabled = true;
+    }
+</script>
