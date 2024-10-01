@@ -38,7 +38,8 @@
                             de concreto?</label>
                         <select class="form-select my-3" aria-label="Default select example" name="Necesidad">
                             <option selected>Selecciona una opción</option>
-                            <option value="Variabilidad en la calidad del concreto" >Variabilidad en la calidad del concreto</option>
+                            <option value="Variabilidad en la calidad del concreto">Variabilidad en la calidad del
+                                concreto</option>
                             <option value="Altos costos operativos">Altos costos operativos</option>
                             <option value="Desperdicio de materiales">Desperdicio de materiales</option>
                             <option value="Falta de personal capacitado">Falta de personal capacitado</option>
@@ -57,7 +58,8 @@
                         <label for="" class="preguntas">2. ¿Está interesado en recibir asesoría técnica o capacitación
                             para mejorar sus procesos de
                             producción de concreto?</label>
-                        <select class="form-select my-3" aria-label="Default select example" name="Asesoria_o_Capacitacion">
+                        <select class="form-select my-3" aria-label="Default select example"
+                            name="Asesoria_o_Capacitacion">
                             <option value="Ninguna">Selecciona una opción</option>
                             <option value="Asesoría técnica">Asesoría técnica</option>
                             <option value="Capacitación">Capacitación</option>
@@ -75,11 +77,14 @@
                         <label for="" class="preguntas">(Seleccione las áreas de interés)</label>
                         <select class="form-select my-3" aria-label="Default select example" name="Intereses">
                             <option value="Ninguna" selected>Selecciona una opción</option>
-                            <option value="Optimización de procesos" >Optimización de procesos</option>
+                            <option value="Optimización de procesos">Optimización de procesos</option>
                             <option value="Control de calidad y verificación">Control de calidad y verificación</option>
-                            <option value="Innovación en tecnologías de producción">Innovación en tecnologías de producción</option>
-                            <option value="Reducción de costos y mejora operativa">Reducción de costos y mejora operativa</option>
-                            <option value="Cumplimiento de normativas y estándares">Cumplimiento de normativas y estándares</option>
+                            <option value="Innovación en tecnologías de producción">Innovación en tecnologías de
+                                producción</option>
+                            <option value="Reducción de costos y mejora operativa">Reducción de costos y mejora
+                                operativa</option>
+                            <option value="Cumplimiento de normativas y estándares">Cumplimiento de normativas y
+                                estándares</option>
                         </select>
                         <div type="text" class="input-wrap-2 my-3">
                             <input name="" id="" cols="30" rows="10" name="Intereses_especificos"
@@ -102,19 +107,18 @@
 
 
             <div class="d-flex justify-content-center">
-                <button id="submitButton" type="submit" class="send_message btn btn-primary">Enviar
+                <button id="submitButton" onclick="disableButton()" type="submit"
+                    class="send_message click-button btn btn-primary">Enviar
                     correo</button>
             </div>
-            
-            <input type="hidden" name="_next" value="http://localhost:4200">
+
+            <input type="hidden" name="_next" value="http://localhost:4200/redirection">
             <input type="hidden" name="_captcha" value="false">
-           
+
         </form>
     </div>
 </section>
 
 <script>
-    function disableButton() {
-        document.getElementById("submitButton").disabled = true;
-    }
+ 
 </script>

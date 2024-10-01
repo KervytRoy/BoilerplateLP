@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MainComponent } from './pages/main/main.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
@@ -12,11 +13,13 @@ import { OurServicesComponent } from './components/our-services/our-services.com
 import { CommentAndVideoComponent } from './components/comment-and-video/comment-and-video.component';
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,
     PresentationComponent,
+    MainComponent,
     FooterComponent,
     WhoWeAreComponent,
     OurValuesComponent,
