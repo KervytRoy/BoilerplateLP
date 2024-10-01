@@ -106,12 +106,24 @@
             </div>
 
 
-            <div class="d-flex justify-content-center">
-                <button id="submitButton" onclick="disableButton()" type="submit"
-                    class="send_message click-button btn btn-primary">Enviar
-                    correo</button>
-            </div>
+            <div class="d-flex justify-content-center position-relative">
+                <!-- Botón que siempre está visible y cubre completamente el botón de enviar -->
+                <button id="overlayButton" type="button" 
+                    class="btn btn-secondary position-absolute w-100 h-100"
+                    (click)="triggerSubmit()"                     
+                    [disabled]="isOverlayButtonDisabled"
+                    [textContent]="textContent"
+                    style="z-index: 2;">
+                    Nuevo Botón
+                </button>
 
+                <!-- Botón de enviar correo -->
+                <button id="submitButton" type="submit"
+                    class="send_message click-button btn btn-primary"
+                    style="z-index: 1;">
+                    Enviar correo
+                </button>
+            </div>
             <input type="hidden" name="_next" value="http://localhost:4200/redirection">
             <input type="hidden" name="_captcha" value="false">
 
