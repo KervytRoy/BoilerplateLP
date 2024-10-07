@@ -14,7 +14,7 @@ export class ContactFormComponent {
     // Deshabilita el botón de overlay para evitar múltiples clics
     this.isOverlayButtonDisabled = true;
 
-    alert('Alerta');
+    alert('Por favor, PRESIONE "aceptar" y espere unos segundos hasta que termine de cargar la página');
 
     // Selecciona el botón de enviar correo y dispara su evento de clic
     const submitButton = document.getElementById('submitButton') as HTMLButtonElement;
