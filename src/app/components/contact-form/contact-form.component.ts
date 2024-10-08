@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ContactFormComponent {
   isOverlayButtonDisabled: boolean = false;
-  textContent: string = "Nuevo Boton"
+  textContent: string = "Enviar Correo"
   triggerSubmit() {
     // Deshabilita el botón de overlay para evitar múltiples clics
     this.isOverlayButtonDisabled = true;
