@@ -109,16 +109,16 @@
             <div class="d-flex justify-content-center position-relative">
                 <!-- Botón que siempre está visible y cubre completamente el botón de enviar -->
                 <button id="overlayButton" type="button" 
-                    class="btn btn-secondary position-absolute w-100 h-100"
+                    class="btn btn-secondary position-absolute w-100 h-100 newButtonEmail"
                     (click)="triggerSubmit()"                     
                     [disabled]="isOverlayButtonDisabled"
                     [textContent]="textContent"
-                    style="z-index: 2;">
-                    Enviar Correo
+                    style="z-index: 2; background: var(--choco-claro);">
+                    Enviar correo
                 </button>
 
                 <!-- Botón de enviar correo -->
-                <button id="submitButton" type="submit"
+                <button id="submitButton"  type="submit"
                     class="send_message click-button btn btn-primary"
                     style="z-index: 1;">
                     Enviar correo
