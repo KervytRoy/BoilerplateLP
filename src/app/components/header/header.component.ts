@@ -56,7 +56,7 @@ export class HeaderComponent implements AfterViewInit {
   }
 
   moveToRight(slider: HTMLElement, sliderSections: NodeListOf<HTMLElement>): void {
-    console.log('moveToRight called');
+
     if (this.counter >= sliderSections.length - 1) {
       this.counter = 0;
       this.operacion = 0;
@@ -71,7 +71,6 @@ export class HeaderComponent implements AfterViewInit {
   }
 
   moveToLeft(slider: HTMLElement, sliderSections: NodeListOf<HTMLElement>): void {
-    console.log('moveToLeft called');
     this.counter--;
     if (this.counter < 0) {
       this.counter = sliderSections.length - 1;

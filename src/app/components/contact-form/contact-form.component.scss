@@ -112,6 +112,9 @@ form .input-wrap-2 textarea {
   bottom: 0; /* Move into view */
 }
 
-.newButtonEmail{
-  content: "Enviar Correo"
+
+.newButtonEmail {
+  height: 60px; /* Ajusta esta altura según sea necesario */
+  font-size: 1.2rem; /* Aumenta el tamaño del texto si es necesario */
+  width: auto; /* Evita que el botón ocupe todo el ancho si no es necesario */
 }
